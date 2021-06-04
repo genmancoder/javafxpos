@@ -45,6 +45,16 @@ public class JdbcDao {
         return false;        
     }
     
+    public Connection getConnection(){
+        try{
+            Connection connection = DriverManager.getConnection(DATABASE_URL,DATABASE_USERNAME,DATABASE_PASSWORD);
+            return connection;
+        }catch(SQLException ex){
+            printSQLException(ex);
+        }
+        return null;
+    }
+    
     public static void printSQLException(SQLException ex){
         for(Throwable e: ex){
             if(ex instanceof SQLException){

@@ -18,9 +18,9 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane prefHeight="700.0" prefWidth="1300.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.newfoundsoftware.pos.DashboardController">
+<BorderPane onKeyPressed="#handleKeyPressed" prefHeight="700.0" prefWidth="1300.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.newfoundsoftware.pos.DashboardController">
    <center>
-      <AnchorPane id="AnchorPane" prefHeight="555.0" prefWidth="600.0">
+      <AnchorPane id="AnchorPane" prefHeight="555.0" prefWidth="600.0" style="-fx-background-color: #464646;">
          <children>
             <Label fx:id="lblUsername" layoutX="34.0" layoutY="556.0" prefHeight="40.0" prefWidth="216.0" text="***" />
             <StackPane layoutX="42.0" layoutY="43.0" prefHeight="131.0" prefWidth="166.0" style="-fx-border-color: #000;">
@@ -70,7 +70,7 @@
       </MenuBar>
    </top>
    <right>
-      <VBox prefHeight="610.0" prefWidth="389.0" spacing="10.0" style="-fx-background-color: #ccc;" BorderPane.alignment="CENTER">
+      <VBox prefHeight="610.0" prefWidth="389.0" spacing="10.0" style="-fx-background-color: #252225;" BorderPane.alignment="CENTER">
          <padding>
             <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
          </padding>
@@ -95,7 +95,7 @@
          </children></VBox>
    </right>
    <bottom>
-      <HBox prefHeight="65.0" prefWidth="200.0" spacing="10.0" style="-fx-background-color: #ccc;" BorderPane.alignment="CENTER">
+      <HBox prefHeight="65.0" prefWidth="200.0" spacing="10.0" style="-fx-background-color: #191619;" BorderPane.alignment="CENTER">
          <children>
             <Button mnemonicParsing="false" prefHeight="54.0" prefWidth="159.0" style="-fx-background-color: #f0932b;" text="[F1 - New Order]" textFill="WHITE">
                <font>
@@ -112,12 +112,12 @@
                   <Font name="System Bold" size="12.0" />
                </font>
             </Button>
-            <Button layoutX="358.0" layoutY="20.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="159.0" style="-fx-background-color: #26c6da;" text="[F4 - Manage Product]" textFill="WHITE">
+            <Button layoutX="358.0" layoutY="20.0" mnemonicParsing="false" onAction="#actionManageProduct" prefHeight="54.0" prefWidth="159.0" style="-fx-background-color: #26c6da;" text="[F4 - Manage Product]" textFill="WHITE">
                <font>
                   <Font name="System Bold" size="12.0" />
                </font>
             </Button>
-            <Button layoutX="527.0" layoutY="20.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="159.0" style="-fx-background-color: #26c6da;" text="[F5 - Manage Table]" textFill="WHITE">
+            <Button fx:id="btnManageTable" layoutX="527.0" layoutY="20.0" mnemonicParsing="false" onAction="#manageTable" prefHeight="54.0" prefWidth="159.0" style="-fx-background-color: #26c6da;" text="[F5 - Manage Table]" textFill="WHITE">
                <font>
                   <Font name="System Bold" size="12.0" />
                </font>
@@ -138,7 +138,7 @@
          </padding></HBox>
    </bottom>
    <left>
-      <VBox prefHeight="555.0" prefWidth="213.0" spacing="10.0" style="-fx-background-color: #ccc;" BorderPane.alignment="CENTER">
+      <VBox prefHeight="555.0" prefWidth="213.0" spacing="10.0" style="-fx-background-color: #252225;" BorderPane.alignment="CENTER">
          <padding>
             <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
          </padding>
