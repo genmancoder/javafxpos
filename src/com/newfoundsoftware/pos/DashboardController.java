@@ -126,8 +126,17 @@ public class DashboardController implements Initializable {
                 System.out.println("Sales Report");
                 break;
             case F7:
-                System.out.println("Logout.");
+                try {
+                    openModalWindow("Lookup.fxml", "Product Lookup");
+                } catch (Exception ex) {
+                    System.out.println("" + ex.getMessage());
+                    ex.printStackTrace();
+                }
                 break;
+            case F8:
+                System.out.println("Logout.");
+                break;  
+                
         }
     }
 

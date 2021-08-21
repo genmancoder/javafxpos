@@ -15,3 +15,74 @@ and open the template in the editor.
     -fx-padding: 0px;
     -fx-background-color: #fff; 
 }
+
+.xemacscode-dark-inputs{
+   -fx-background-color: linear-gradient(to bottom, #7f7f7f,  #4e4e4e);
+    -fx-font-family: 'Fira Code';    
+    -fx-border-color:  #4e4e4e ;
+     -fx-border-style: solid line-cap round ;
+    -fx-border-width: 1 ;
+    -fx-border-radius: 2;
+    -fx-text-fill: white;  
+}
+
+.xemacscode-bg-one{
+        -fx-background-color: linear-gradient(to bottom, #7f7f7f,  #4e4e4e);
+    -fx-font-family: 'Fira Code';    
+    -fx-border-color:  #4e4e4e ;
+     -fx-border-style: solid line-cap round ;
+    -fx-border-width: 1 ;
+    -fx-border-radius: 2;
+    -fx-text-fill: white; 
+     -fx-font-size: 36px;
+        -fx-font-weight: bold;
+}
+
+/* Table */
+.table-view{
+    -fx-background-color: #2a282b;        
+       -fx-border-color: #2a282b;
+}
+.table-view .column-header,
+.table-view .column-header-background .filler {
+    -fx-background-color: linear-gradient(to bottom, #7d7b7c, #4c4a4b);    
+    -fx-border-width: 0;
+    -fx-font-weight: bold;
+}
+.table-view .column-header .label{
+   -fx-text-fill: white;
+   -fx-font-weight: bold; 
+   -fx-alignment: CENTER_LEFT;
+    -fx-font-family: 'Fira Code';  
+}
+
+.table-row-cell:even{
+    -fx-background-color: #2c2c2c;
+ }
+.table-row-cell:odd{
+     -fx-background-color: #2a2829;
+ }
+
+.table-view .cell{
+   -fx-cell-size: 28;
+   -fx-font-family: 'Fira Code';
+  -fx-alignment: center-left; 
+  -fx-border-width: 0;
+  -fx-text-fill: lightgray;
+  -fx-alignment: CENTER_LEFT;
+   
+}
+.table-row-cell:selected {
+   -fx-background-color: whitesmoke; 
+   -fx-text-background-color:  #6622CC;  
+  -fx-border-width: 0;  
+  -fx-background-color: linear-gradient(to bottom, #f3f0f3, #8d8a8e);        
+  -fx-text-fill: #000000;
+}
+.table-view:focused .table-row-cell:selected .table-cell {
+    -fx-text-fill: #000000;
+}
+
+.table-view .cell:selected{  
+  -fx-text-fill: #000000;
+}
